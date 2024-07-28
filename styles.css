@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=El+Messiri:wght@400..700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background: rgba(48, 64, 64, 1.0); 
+  background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+  background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+  background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.container {
+  max-width: 900px;
+  
+  margin: 50px auto;
+  border-radius: 30px;
+  padding: 20px;
+  padding-bottom: 60px;
+  background: rgba(230, 221, 221, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #fff
+}
+#loginContainer {
+  width: 500px;
+
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  
+}
+
+button {
+  background-color: #929292;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #38393a;
+}
+.task-form,
+.task-list,
+.submitted-tasks {
+  margin-top: 20px;
+}
+
+.form-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 120px;
+}
+
+table {
+  width: 100%;
+  border-radius: 30px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  
+}
+
+th {
+  background-color: #242121;
+}
+
+.actions {
+padding: -5000px;
+}
+
+.actions button {
+  
+  margin-left: 5px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.actions button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.actions button.delete {
+  background-color: #f44336; /* Red background */
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#logoutButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #d32f2f;
+}
+
+
+

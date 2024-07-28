@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام المهام </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    
+  </div>
+  <div dir="rtl" class="container" id="loginContainer">
+    <h1>مرحبا </h1>
+    <div class="login-form">
+      <form id="loginForm">
+        <label for="username">اسم المستخدم :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">كلمة المرور :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">دخول</button>
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <div dir="rtl" class="container" id="todoContainer" style="display: none;">
+    <button id="logoutButton">تسجيل الخروج</button>
+   
+    <!-- <h1>نظام المهام</h1> -->
+    
+
+    <!-- Task Form (Visible to Admin Only) -->
+    <div class="task-form" id="taskFormContainer" style="display: none;">
+      <h2>اضافة مهمه</h2>
+      <form id="taskForm">
+        <div class="form-group">
+          <label for="taskName">اسم المهمة :</label>
+          <input type="text" id="taskName" name="taskName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="taskTime">توقيت المهمة:</label>
+          <input type="text" id="taskTime" name="taskTime" required>
+        </div>
+
+        <label for="taskNotes">معلومات المهمة</label>
+        <textarea id="taskNotes" name="taskNotes"></textarea>
+
+        <button type="submit">آضافة</button>
+      </form>
+    </div>
+
+    <!-- Task List -->
+    <div class="task-list">
+      <h2>مهامي</h2>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>اسم المهمة</th>
+            <th>وقت المهمة</th>
+            <th>ملاحظات</th>
+            <th>الاجراء</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tasks will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Submitted Tasks -->
+    <div  class="submitted-tasks">
+      <h2>المكتملة</h2>
+      <table  id="submittedTaskTable">
+        <thead>
+          <tr>
+            <th>اسم المهمة</th>
+            <th>وقت المهمة</th>
+            <th>ملاحظة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Submitted tasks will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
