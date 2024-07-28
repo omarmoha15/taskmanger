@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نظام المهام </title>
+  <title>نظام المهام</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="header">
     <img src="logo.jpg" alt="Logo" class="logo">
-    
   </div>
   <div dir="rtl" class="container" id="loginContainer">
-    <h1>مرحبا </h1>
+    <h1>مرحبا</h1>
     <div class="login-form">
       <form id="loginForm">
         <label for="username">اسم المستخدم :</label>
@@ -24,16 +23,36 @@
         <button type="submit">دخول</button>
         <p id="errorMessage" class="error-message"></p>
       </form>
+      <a id="showRegisterForm" href="#">انشاء حساب جديد !؟</a>
+    </div>
+  </div>
+
+  <div dir="rtl" class="container" id="registerContainer" style="display: none;">
+    <h1>تسجيل جديد</h1>
+    <div class="register-form">
+      <form id="registerForm">
+        <label for="registerUsername">اسم المستخدم:</label>
+        <input type="text" id="registerUsername" name="registerUsername" required>
+        
+        <label for="registerID">رقم الهوية:</label>
+        <input type="text" id="registerID" name="registerID" required>
+        
+        <label for="registerEmail">البريد الالكتروني:</label>
+        <input type="email" id="registerEmail" name="registerEmail" required>
+        
+        <label for="registerPassword">كلمة المرور:</label>
+        <input type="password" id="registerPassword" name="registerPassword" required>
+        
+        <button type="submit">تسجيل</button>
+        <p id="registerErrorMessage" class="error-message"></p>
+      </form>
+      <a id="showLoginForm" href="#">العودة إلى تسجيل الدخول</a>
     </div>
   </div>
 
   <div dir="rtl" class="container" id="todoContainer" style="display: none;">
     <button id="logoutButton">تسجيل الخروج</button>
-   
-    <!-- <h1>نظام المهام</h1> -->
     
-
-    <!-- Task Form (Visible to Admin Only) -->
     <div class="task-form" id="taskFormContainer" style="display: none;">
       <h2>اضافة مهمه</h2>
       <form id="taskForm">
@@ -54,7 +73,6 @@
       </form>
     </div>
 
-    <!-- Task List -->
     <div class="task-list">
       <h2>مهامي</h2>
       <table id="taskTable">
@@ -72,10 +90,9 @@
       </table>
     </div>
 
-    <!-- Submitted Tasks -->
-    <div  class="submitted-tasks">
+    <div class="submitted-tasks">
       <h2>المكتملة</h2>
-      <table  id="submittedTaskTable">
+      <table id="submittedTaskTable">
         <thead>
           <tr>
             <th>اسم المهمة</th>
